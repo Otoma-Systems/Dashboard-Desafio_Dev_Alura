@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="resources/style.css">
 </head>
 <body>
-    <div class="page-content">
-        <nav class="navbar">
-            <div class="nav-content">
-                <a href="index.html" class="logo">
-                    <img src="https://raw.githubusercontent.com/Otoma-Systems/Icons/refs/heads/main/Proprietary/Otoma%20Systems/SVG/Otoma%20Systems.svg" alt="Otoma Systems Logo">
-                </a>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-        </nav>
 
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <img src="https://raw.githubusercontent.com/Otoma-Systems/Icons/refs/heads/main/Proprietary/Otoma%20Systems/SVG/Otoma%20Systems.svg" alt="Otoma Systems Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-content">
         <section class="hero">
             <div class="hero-content">
                 <div class="hero-text">
@@ -52,10 +53,24 @@
                 </div>
             </div>
         </section>
-    </div>
+
+        <section class="home-dashboard">
+            <div class="app-section">
+                <div class="section-header">
+                    <i class="fas fa-globe"></i>
+                    <h2>Main Apps</h2>
+                </div>
+                <div id="home-apps-grid" class="app-grid">
+                    <!-- Apps will be loaded dynamically from apps.json -->
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <p>© 2025 Otoma Systems. All rights reserved. | opensource@otoma.com.br</p>
     </footer>
+
+    <script src="resources/script.js"></script>
 </body>
 </html>

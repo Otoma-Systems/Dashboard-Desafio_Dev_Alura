@@ -1,0 +1,84 @@
+{
+  "public": [
+    {
+      "name": "Emby",
+      "description": "Personal media server for streaming movies, TV shows, music, and photos.",
+      "logo": "https://emby.media/resources/logowhite_1881.png",
+      "url": "https://emby.otoma.com.br:2023",
+      "requiresAuth": false
+    },
+    {
+      "name": "Media Request",
+      "description": "Request and manage movies and TV shows for your media library.",
+      "logo": "https://raw.githubusercontent.com/Fallenbagel/jellyseerr/develop/public/logo_full.svg",
+      "url": "https://request.otoma.com.br:2023",
+      "requiresAuth": false
+    },
+    {
+      "name": "Guacamole",
+      "description": "Clientless remote desktop gateway accessible from any web browser.",
+      "logo": "https://guacamole.apache.org/images/logos/guac-tricolor-logo.svg",
+      "url": "https://guac.rc.otoma.com.br",
+      "requiresAuth": false
+    },
+    {
+      "name": "TeamSpeak",
+      "description": "Voice communication server for gaming and team collaboration.",
+      "logo": "https://www.teamspeak.com/user/themes/teamspeak/images/logo_inverse.svg",
+      "url": "teamspeak.html",
+      "requiresAuth": false
+    }
+  ],
+  "private": [
+    {
+      "name": "OtoCloud",
+      "description": "Private cloud storage and collaboration platform for file sync.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Nextcloud_Logo.svg/2560px-Nextcloud_Logo.svg.png",
+      "url": "https://cloud.otoma.com.br:2023",
+      "requiresAuth": true,
+      "authType": "VPN Required"
+    },
+    {
+      "name": "Wallos",
+      "description": "Subscription and billing management system for tracking expenses.",
+      "logo": "https://wallosapp.com/images/logo/walloswhite.webp",
+      "url": "https://billing.otoma.com.br:2023",
+      "requiresAuth": true,
+      "authType": "VPN Required"
+    }
+  ],
+  "admin": [
+    {
+      "name": "Radarr",
+      "description": "Movie collection manager for automated downloads and organization.",
+      "logo": "https://raw.githubusercontent.com/Radarr/Radarr/refs/heads/develop/Logo/Radarr.svg",
+      "url": "https://radarr.zt.otoma.com.br",
+      "requiresAuth": true,
+      "authType": "Admin Only"
+    },
+    {
+      "name": "Sonarr",
+      "description": "TV series management system for tracking and downloading episodes.",
+      "logo": "https://raw.githubusercontent.com/Sonarr/Sonarr/refs/heads/v5-develop/Logo/Sonarr.svg",
+      "url": "https://sonarr.zt.otoma.com.br",
+      "requiresAuth": true,
+      "authType": "Admin Only"
+    },
+    {
+      "name": "Jackett",
+      "description": "Indexer proxy server for translating queries to tracker searches.",
+      "logo": "https://raw.githubusercontent.com/Jackett/Jackett/refs/heads/master/src/Jackett.Common/Content/jacket_medium.png",
+      "url": "https://jackett.zt.otoma.com.br",
+      "requiresAuth": true,
+      "authType": "Admin Only"
+    },
+    {
+      "name": "qBittorrent",
+      "description": "BitTorrent client with web interface for remote management.",
+      "logo": "https://raw.githubusercontent.com/qbittorrent/qBittorrent/refs/heads/master/src/icons/qbittorrent-tray.svg",
+      "url": "https://torrent.zt.otoma.com.br",
+      "requiresAuth": true,
+      "authType": "Admin Only"
+    }
+  ]
+}
