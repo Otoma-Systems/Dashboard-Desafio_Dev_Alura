@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otoma Systems - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+    <div class="page-content">
+        <nav class="navbar">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <img src="https://raw.githubusercontent.com/Otoma-Systems/Icons/refs/heads/main/Proprietary/Otoma%20Systems/SVG/Otoma%20Systems.svg" alt="Otoma Systems Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="dashboard">
+            <div class="dashboard-content">
+                <h1>Application Dashboard</h1>
+                <p class="dashboard-subtitle">Access all Otoma Systems services and applications</p>
+
+                <!-- Public Apps -->
+                <div class="app-section">
+                    <div class="section-header">
+                        <i class="fas fa-globe"></i>
+                        <h2>Public Apps</h2>
+                    </div>
+                    <div class="app-grid">
+                        <a href="https://emby.otoma.com.br:2023" target="_blank" class="app-card">
+                            <div class="app-icon">
+                                <img src="https://emby.media/resources/logowhite_1881.png" alt="Emby Logo">
+                            </div>
+                            <div class="app-info">
+                                <h3>Emby</h3>
+                                <p>Personal media server for streaming movies, TV shows, music, and photos.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://request.otoma.com.br:2023" target="_blank" class="app-card">
+                            <div class="app-icon">
+                                <img src="https://raw.githubusercontent.com/Fallenbagel/jellyseerr/develop/public/logo_full.svg" alt="Jellyseerr Logo">
+                            </div>
+                            <div class="app-info">
+                                <h3>Media Request</h3>
+                                <p>Request and manage movies and TV shows for your media library.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://guac.rc.otoma.com.br" target="_blank" class="app-card">
+                            <div class="app-icon">
+                                <img src="https://guacamole.apache.org/images/logos/guac-tricolor-logo.svg" alt="Guacamole Logo">
+                            </div>
+                            <div class="app-info">
+                                <h3>Guacamole</h3>
+                                <p>Clientless remote desktop gateway accessible from any web browser.</p>
+                            </div>
+                        </a>
+
+                        <a href="teamspeak.html" class="app-card">
+                            <div class="app-icon">
+                                <img src="https://www.teamspeak.com/user/themes/teamspeak/images/logo_inverse.svg" alt="TeamSpeak Logo">
+                            </div>
+                            <div class="app-info">
+                                <h3>TeamSpeak</h3>
+                                <p>Voice communication server for gaming and team collaboration.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Private Apps (collapsible) -->
+                <div class="app-section">
+                    <div class="section-header collapsible-header" onclick="toggleCollapse('private-section')">
+                        <div class="collapsible-header-left">
+                            <i class="fas fa-lock"></i>
+                            <h2>Private Apps</h2>
+                        </div>
+                        <i id="private-section-toggle" class="fas fa-chevron-down collapse-toggle collapsed"></i>
+                    </div>
+                    <div id="private-section" class="collapsible-content">
+                        <div class="app-grid">
+                            <a href="https://cloud.otoma.com.br:2023" target="_blank" class="app-card">
+                                <span class="app-badge">VPN Required</span>
+                                <div class="app-icon">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Nextcloud_Logo.svg/2560px-Nextcloud_Logo.svg.png" alt="Nextcloud Logo">
+                                </div>
+                                <div class="app-info">
+                                    <h3>OtoCloud</h3>
+                                    <p>Private cloud storage and collaboration platform for file sync.</p>
+                                </div>
+                            </a>
+
+                            <a href="https://billing.otoma.com.br:2023" target="_blank" class="app-card">
+                                <span class="app-badge">VPN Required</span>
+                                <div class="app-icon">
+                                    <img src="https://wallosapp.com/images/logo/walloswhite.webp" alt="Wallos Logo">
+                                </div>
+                                <div class="app-info">
+                                    <h3>Wallos</h3>
+                                    <p>Subscription and billing management system for tracking expenses.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Administration Apps (collapsible) -->
+                <div class="app-section">
+                    <div class="section-header collapsible-header" onclick="toggleCollapse('admin-section')">
+                        <div class="collapsible-header-left">
+                            <i class="fas fa-tools"></i>
+                            <h2>Administration Apps</h2>
+                        </div>
+                        <i id="admin-section-toggle" class="fas fa-chevron-down collapse-toggle collapsed"></i>
+                    </div>
+                    <div id="admin-section" class="collapsible-content">
+                        <div class="app-grid">
+                            <a href="https://radarr.zt.otoma.com.br" target="_blank" class="app-card">
+                                <span class="app-badge">Admin Only</span>
+                                <div class="app-icon">
+                                    <img src="https://raw.githubusercontent.com/Radarr/Radarr/refs/heads/develop/Logo/Radarr.svg" alt="Radarr Logo">
+                                </div>
+                                <div class="app-info">
+                                    <h3>Radarr</h3>
+                                    <p>Movie collection manager for automated downloads and organization.</p>
+                                </div>
+                            </a>
+
+                            <a href="https://sonarr.zt.otoma.com.br" target="_blank" class="app-card">
+                                <span class="app-badge">Admin Only</span>
+                                <div class="app-icon">
+                                    <img src="https://raw.githubusercontent.com/Sonarr/Sonarr/refs/heads/v5-develop/Logo/Sonarr.svg" alt="Sonarr Logo">
+                                </div>
+                                <div class="app-info">
+                                    <h3>Sonarr</h3>
+                                    <p>TV series management system for tracking and downloading episodes.</p>
+                                </div>
+                            </a>
+
+                            <a href="https://jackett.zt.otoma.com.br" target="_blank" class="app-card">
+                                <span class="app-badge">Admin Only</span>
+                                <div class="app-icon">
+                                    <img src="https://raw.githubusercontent.com/Jackett/Jackett/refs/heads/master/src/Jackett.Common/Content/jacket_medium.png" alt="Jackett Logo">
+                                </div>
+                                <div class="app-info">
+                                    <h3>Jackett</h3>
+                                    <p>Indexer proxy server for translating queries to tracker searches.</p>
+                                </div>
+                            </a>
+
+                            <a href="https://torrent.zt.otoma.com.br" target="_blank" class="app-card">
+                                <span class="app-badge">Admin Only</span>
+                                <div class="app-icon">
+                                    <img src="https://raw.githubusercontent.com/qbittorrent/qBittorrent/refs/heads/master/src/icons/qbittorrent-tray.svg" alt="qBittorrent Logo">
+                                </div>
+                                <div class="app-info">
+                                    <h3>qBittorrent</h3>
+                                    <p>BitTorrent client with web interface for remote management.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Otoma Systems. All rights reserved. | opensource@otoma.com.br</p>
+    </footer>
+
+    <script src="resources/script.js"></script>
+</body>
+</html>
