@@ -69,6 +69,30 @@
                         </div>
                     </div>
                 </div>
+                <!-- Password Modal -->
+                <div id="password-modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2><i class="fas fa-shield-halved"></i> Administrator Authentication</h2>
+                        </div>
+                        <p class="modal-description">Enter the administrator password to access admin applications.</p>
+                        
+                        <div class="password-input-group">
+                            <input type="password" id="admin-password-input" placeholder="Enter password" autocomplete="off">
+                        </div>
+                        
+                        <div id="password-error" class="password-error">Invalid password</div>
+                        
+                        <div class="modal-buttons">
+                            <button onclick="closePasswordModal()" class="btn btn-secondary">
+                                <i class="fas fa-times"></i> Cancel
+                            </button>
+                            <button onclick="verifyPassword()" class="btn btn-primary">
+                                <i class="fas fa-unlock"></i> Authenticate
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
