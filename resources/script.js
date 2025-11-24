@@ -44,7 +44,7 @@ async function verifyPassword() {
     }
 
     try {
-        const response = await fetch('./resources/auth.json');
+        const response = await fetch('resources/auth.json');
         const data = await response.json();
         const storedHash = data.passwordHash;
 
