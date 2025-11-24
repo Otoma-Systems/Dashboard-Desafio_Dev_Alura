@@ -15,10 +15,10 @@
       "requiresAuth": false
     },
     {
-      "name": "Wikipedia",
-      "description": "Free online encyclopedia with collaboratively edited articles.",
-      "logo": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/wikipedia.svg",
-      "url": "https://www.wikipedia.org",
+      "name": "TeamSpeak Instructions",
+      "description": "Voice, video, and text communication platform for communities.",
+      "logo": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/teamspeak.svg",
+      "url": "/teamspeak.html",
       "requiresAuth": false
     },
     {
@@ -29,10 +29,10 @@
       "requiresAuth": false
     },
     {
-      "name": "TeamSpeak Instructions",
-      "description": "Voice, video, and text communication platform for communities.",
-      "logo": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/teamspeak.svg",
-      "url": "/teamspeak.html",
+      "name": "Wikipedia",
+      "description": "Free online encyclopedia with collaboratively edited articles.",
+      "logo": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/wikipedia.svg",
+      "url": "https://www.wikipedia.org",
       "requiresAuth": false
     },
     {
